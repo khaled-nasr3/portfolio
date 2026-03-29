@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/output.css">
+    <title>Projects</title>
+</head>
+
+<body class=" relative z-0 bg-[#fefefe] min-h-screen overflow-x-hidden md:overflow-x-hidden dark:bg-slate-950">
+
+
+    <!-- NAV -->
+    <nav class="relative z-50 flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-5">
+
+
+        <!-- Menu Links Desktop -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="index.html"
+                class="nav-link active text-lg text-[#1a1a1a] font-semibold no-underline hover:text-2xl duration-150 dark:text-white">Home</a>
+            <a href="index.html#about"
+                class="nav-link text-lg text-[#1a1a1a] font-medium no-underline hover:text-2xl duration-150 dark:text-white">About
+                Me</a>
+            <a href="index.html#projects"
+                class="nav-link text-2xl text-[#1a1a1a] font-medium no-underline hover:text-xl duration-150 dark:text-white">Projects</a>
+            <a href="skills.html"
+                class="text-base font-medium text-[#1a1a1a] dark:text-white hover:text-blue-500 hover:text-2xl  transition-all duration-150">Skills</a>
+            <a href="index.html#contact"
+                class="nav-link text-lg text-[#1a1a1a] font-medium no-underline hover:text-2xl duration-150 dark:text-white">Contact</a>
+        </div>
+        <!-- Logo -->
+        <div id="logo-placeholder" class="mb-4 md:mb-0">
+            <img class="w-12 rounded-full" src="images/KeNy!.jpg" alt="Khaled Logo">
+        </div>
+
+        <!-- Social Icons + Dark Mode -->
+        <div class="hidden md:flex items-center gap-3 mt-4 md:mt-0">
+            <a href="https://www.instagram.com/khalednasr374/" target="_blank"><img
+                    class="w-10 hover:mb-1.5 transation-all duration-200" src="images/instagram.png" alt=""></a>
+            <a href="https://github.com/khaled-nasr3" target="_blank"><img
+                    class="w-10 hover:mb-1.5 transation-all duration-200" src="images/github2.png" alt=""></a>
+            <a href="https://x.com/" target="_blank"><img class="w-10 hover:mb-1.5 transation-all duration-200"
+                    src="images/twitter2.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/khaled-nasr-aa48b0334/" target="_blank"><img
+                    class="w-10 hover:mb-1.5 transation-all duration-200" src="images/linkedin.png" alt=""></a>
+            <button id="darkToggle"
+                class="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+                <!-- شمس - بتظهر في الدارك مود -->
+                <img class="hidden dark:block w-7 h-7" src="images/sun.png" alt="Light Mode">
+                <!-- قمر - بيظهر في اللايت مود -->
+                <svg class="block dark:hidden w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Hamburger Menu Mobile -->
+        <div class="md:hidden  flex items-center mt-4">
+            <button id="menu-toggle" class="flex flex-col justify-between w-8 h-6 focus:outline-none">
+                <span class="block h-1 w-full bg-black dark:bg-white"></span>
+                <span class="block h-1 w-full bg-black  dark:bg-white"></span>
+                <span class="block h-1 w-full bg-black  dark:bg-white"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="hidden  left-0 w-full mt-5 bg-white shadow-md flex flex-col items-center gap-4 py-4 md:hidden z-40 transition-all duration-300 overflow-hidden">
+            <a href="index.html#home" class="text-lg font-semibold text-[#1a1a1a]">Home</a>
+            <a href="index.html#about" class="text-lg font-medium text-[#1a1a1a]">About Me</a>
+            <a href="index.html#projects" class="text-lg font-medium text-[#1a1a1a]">Projects</a>
+            <a href="#articles" class="text-lg font-medium text-[#1a1a1a]">Articles</a>
+            <div class="flex items-center gap-3 mt-2">
+                <a href="https://www.instagram.com/khalednasr374/" target="_blank"><img class="w-10"
+                        src="images/instagram.png" alt=""></a>
+                <a href="https://github.com/khaled-nasr3" target="_blank"><img class="w-10" src="images/github2.png"
+                        alt=""></a>
+                <a href="https://x.com/" target="_blank"><img class="w-10" src="images/twitter2.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/khaled-nasr-aa48b0334/" target="_blank"><img class="w-10"
+                        src="images/linkedin.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="bg-gray-100 py-20 px-6 md:px-12 lg:px-24 font-sans dark:bg-slate-900">
+        <div class="max-w-6xl mx-auto">
+
+            <div class="mb-12">
+                <h2 class="text-3xl font-extrabold text-gray-900 dark:text-gray-200">Featured Projects</h2>
+                <div class="h-1 w-20 bg-blue-600 mt-2"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Card 1 -->
+                <div
+                    class="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="h-52 overflow-hidden ">
+                        <img src="images/web1.png" alt="Courses Website"
+                            class="p-5 rounded-3xl w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">01</span>
+                        <h3 class="text-xl font-bold text-gray-700 mt-2 mb-2 dark:text-gray-300">Courses Website</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">
+                            Offers suggestions for training courses and lets you search YouTube for any course — results
+                            appear distraction-free on a separate page.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">HTML</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">CSS</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">Bootstrap</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">JavaScript</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">YouTube
+                                API</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/khaled-nasr3/Lodaa-Courses" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://khaled-nasr3.github.io/Lodaa-Courses/" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="h-52 overflow-hidden ">
+                        <img src="images/web2.png" alt="Courses Website"
+                            class="p-5 rounded-3xl w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">02</span>
+                        <h3 class="text-xl font-bold text-gray-700 mt-2 mb-2 dark:text-gray-300">Emergency site</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">
+                            A website that provides reliable medical informations , calls and videos for emergencies.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">HTML</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">CSS</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">Bootstrap</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">JavaScript</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">Node
+                                js</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">API</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/khaled-nasr3/Health-Care-" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://khaled-nasr3.github.io/Health-Care-/" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                    <!-- Card 5 -->
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="h-52 overflow-hidden ">
+                        <img src="images/web3.png" alt="Courses Website"
+                            class="p-5 rounded-3xl w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">03</span>
+                        <h3 class="text-xl font-bold text-gray-700 mt-2 mb-2 dark:text-gray-300">Dentist Website</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">A website for booking appointments at a
+                            dental clinic with several doctors, and it explains the clinic's features.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">HTML</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">CSS</span>
+
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">JavaScript</span>
+
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/khaled-nasr3/Dentist-Website" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://khaled-nasr3.github.io/Dentist-Website/  " target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="h-52 overflow-hidden ">
+                        <img src="images/web4.PNG" alt="Courses Website"
+                            class="p-5 rounded-3xl w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">04</span>
+                        <h3 class="text-xl font-bold text-gray-700 mt-2 mb-2 dark:text-gray-300">E-commerce UI</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">Multi-page e-commerce website interface
+                            for furniture
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">HTML</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">CSS</span>
+
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">Bootstrap</span>
+
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="     https://github.com/khaled-nasr3/E-commerce-UI" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                Code
+                            </a>
+                            <a href=" https://khaled-nasr3.github.io/E-commerce-UI/index.html" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div
+                    class="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="h-52 overflow-hidden ">
+                        <img src="images/web5.PNG" alt="Courses Website"
+                            class="p-5 rounded-3xl w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">05</span>
+                        <h3 class="text-xl font-bold text-gray-700 mt-2 mb-2 dark:text-gray-300">Restaurant website</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">A website for a restaurant that displays
+                            the restaurant's menu and prices, consisting of several sections.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">HTML</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">CSS</span>
+
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">Java
+                                Script</span>
+
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/khaled-nasr3/Restaurant" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://khaled-nasr3.github.io/Restaurant/" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div
+                    class="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-indigo-500/40 hover:-translate-y-1.5 transition-all duration-300">
+                    <div class="h-52 overflow-hidden ">
+                        <img src="images/web6.PNG" alt="Courses Website"
+                            class="p-5 rounded-3xl w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">06</span>
+                        <h3 class="text-xl font-bold text-gray-700 mt-2 mb-2 dark:text-gray-300">maintenance-worker</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed mb-5">A website interface for a maintenance
+                            worker with several sections to explain skills and a contact section.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">HTML</span>
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">CSS</span>
+
+                            <span
+                                class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-500 border border-indigo-500/20">Bootstrap</span>
+
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="https://github.com/khaled-nasr3/maintenance-worker" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://khaled-nasr3.github.io/maintenance-worker/" target="_blank"
+                                class="flex items-center gap-2 text-sm text-gray-400 border border-white/10 px-3 py-2 rounded-lg hover:text-indigo-300 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition-all">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                                Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Logo / About -->
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-4">Khaled</h2>
+                <p class="text-gray-400 leading-relaxed">
+                    Front-End Developer passionate about building modern, responsive, and user-friendly websites.
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white transition">Home</a></li>
+                    <li><a href="#" class="hover:text-white transition">About</a></li>
+                    <li><a href="#" class="hover:text-white transition">Projects</a></li>
+                    <li><a href="#" class="hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-4">Follow Me</h3>
+                <div class="flex gap-4">
+                    <!-- Facebook -->
+                    <a href="#"
+                        class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition transform hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5c0-2.5 1.5-4 3.8-4 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12H17l-.4 3h-2.5v7A10 10 0 0022 12z" />
+                        </svg>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="#"
+                        class="bg-gray-800 p-3 rounded-full hover:bg-white hover:text-black transition transform hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 0a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.7-1.4-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.3-5.6-5.9 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.9 1.2 2 1.2 3.3 0 4.6-2.9 5.6-5.6 5.9.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A12 12 0 0012 0z" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="#"
+                        class="bg-gray-800 p-3 rounded-full hover:bg-blue-500 transition transform hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.4 20.4h-3.6v-5.6c0-1.3-.5-2.2-1.7-2.2-.9 0-1.4.6-1.6 1.1-.1.2-.1.5-.1.8v5.9H9.8s.1-9.5 0-10.5h3.6v1.5c.5-.8 1.4-1.9 3.3-1.9 2.4 0 4.2 1.6 4.2 5v5.9zM6.1 8.4c-1.2 0-2-.8-2-1.8s.8-1.8 2-1.8 2 .8 2 1.8-.8 1.8-2 1.8zm-1.8 12h3.6v-10.5H4.3v10.5z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="text-center text-gray-500 mt-10 border-t border-gray-700 pt-6">
+            © 2026 Khaled. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class', 
+        }
+    </script>
+</body>
+
+</html>
